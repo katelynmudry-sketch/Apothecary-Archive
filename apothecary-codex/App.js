@@ -13,7 +13,7 @@ export default function App() {
     <SafeAreaProvider>
       <PaperProvider theme={AppTheme}>
         <AppNavigator isPremium={isPremium} />
-        <StatusBar style="dark" />
+        <StatusBar style="auto" />
       </PaperProvider>
     </SafeAreaProvider>
   );
