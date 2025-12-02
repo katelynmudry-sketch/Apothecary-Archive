@@ -38,7 +38,7 @@ export default function PlanetsScreen({ navigation }) {
   if (loading) {
     return (
       <View style={styles.loadingContainer}>
-        <ActivityIndicator size="large" color={BrandColors.skyBlue} />
+        <ActivityIndicator size="large" color={BrandColors.sageGreen} />
         <Text style={styles.loadingText}>Loading planetary wisdom...</Text>
       </View>
     );
@@ -74,7 +74,7 @@ export default function PlanetsScreen({ navigation }) {
                 <MaterialCommunityIcons
                   name="chevron-right"
                   size={24}
-                  color={BrandColors.gray}
+                  color={BrandColors.warmGray}
                 />
               </View>
 
@@ -109,18 +109,18 @@ export default function PlanetsScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
   },
   loadingContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
   },
   loadingText: {
     ...Typography.body,
     marginTop: 16,
-    color: BrandColors.gray,
+    color: BrandColors.warmGray,
   },
   header: {
     padding: 16,
@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
   },
   headerSubtitle: {
     ...Typography.body,
-    color: BrandColors.gray,
+    color: BrandColors.warmGray,
   },
   card: {
     marginHorizontal: 16,

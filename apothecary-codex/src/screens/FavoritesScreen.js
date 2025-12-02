@@ -12,7 +12,7 @@ export default function FavoritesScreen() {
       <MaterialCommunityIcons
         name="heart-outline"
         size={64}
-        color={BrandColors.gray}
+        color={BrandColors.warmGray}
       />
       <Title style={styles.title}>No Favorites Yet</Title>
       <Paragraph style={styles.text}>
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
     padding: 32,
   },
   title: {
@@ -41,12 +41,12 @@ const styles = StyleSheet.create({
   text: {
     ...Typography.body,
     textAlign: 'center',
-    color: BrandColors.gray,
+    color: BrandColors.warmGray,
     marginBottom: 16,
   },
   comingSoon: {
     ...Typography.caption,
     fontStyle: 'italic',
-    color: BrandColors.skyBlue,
+    color: BrandColors.sageGreen,
   },
 });

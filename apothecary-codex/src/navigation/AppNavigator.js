@@ -26,9 +26,9 @@ function HomeStackNavigator() {
     <HomeStack.Navigator
       screenOptions={{
         headerStyle: {
-          backgroundColor: BrandColors.cream,
+          backgroundColor: BrandColors.parchment,
         },
-        headerTintColor: BrandColors.navyBlue,
+        headerTintColor: BrandColors.forestGreen,
       }}
     >
       <HomeStack.Screen
@@ -56,9 +56,9 @@ function BrowseStackNavigator() {
     <BrowseStack.Navigator
       screenOptions={{
         headerStyle: {
-          backgroundColor: BrandColors.cream,
+          backgroundColor: BrandColors.parchment,
         },
-        headerTintColor: BrandColors.navyBlue,
+        headerTintColor: BrandColors.forestGreen,
       }}
     >
       <BrowseStack.Screen
@@ -81,9 +81,9 @@ function PlanetsStackNavigator() {
     <PlanetsStack.Navigator
       screenOptions={{
         headerStyle: {
-          backgroundColor: BrandColors.cream,
+          backgroundColor: BrandColors.parchment,
         },
-        headerTintColor: BrandColors.navyBlue,
+        headerTintColor: BrandColors.forestGreen,
       }}
     >
       <PlanetsStack.Screen
@@ -110,11 +110,11 @@ function TabNavigator({ isPremium = false }) {
   return (
     <Tab.Navigator
       screenOptions={{
-        tabBarActiveTintColor: BrandColors.navyBlue,
-        tabBarInactiveTintColor: BrandColors.gray,
+        tabBarActiveTintColor: BrandColors.forestGreen,
+        tabBarInactiveTintColor: BrandColors.warmGray,
         tabBarStyle: {
-          backgroundColor: BrandColors.cream,
-          borderTopColor: BrandColors.lightGray,
+          backgroundColor: BrandColors.parchment,
+          borderTopColor: BrandColors.lightTaupe,
         },
         headerShown: false,
       }}
@@ -147,9 +147,9 @@ function TabNavigator({ isPremium = false }) {
           ),
           headerShown: true,
           headerStyle: {
-            backgroundColor: BrandColors.cream,
+            backgroundColor: BrandColors.parchment,
           },
-          headerTintColor: BrandColors.navyBlue,
+          headerTintColor: BrandColors.forestGreen,
         }}
       />
       <Tab.Screen
@@ -161,9 +161,9 @@ function TabNavigator({ isPremium = false }) {
           ),
           headerShown: true,
           headerStyle: {
-            backgroundColor: BrandColors.cream,
+            backgroundColor: BrandColors.parchment,
           },
-          headerTintColor: BrandColors.navyBlue,
+          headerTintColor: BrandColors.forestGreen,
         }}
       />
     </Tab.Navigator>

@@ -1,34 +1,35 @@
 import { MD3LightTheme as DefaultTheme } from 'react-native-paper';
 
-// Apothecary Codex Brand Colors from Solarium logo
+// Apothecary Codex Botanical Library Theme
+// Inspired by old herbaria, botanical archives, and antique library books
 export const BrandColors = {
-  skyBlue: '#87CEEB',      // Primary - Sky Blue
-  goldenYellow: '#FFD700', // Accent - Golden Yellow
-  navyBlue: '#000080',     // Dark - Navy Blue
-  cream: '#FFFDD0',        // Background - Cream
+  sageGreen: '#6B8E6B',      // Primary - Botanical Sage Green
+  leatherBrown: '#8B6F47',   // Accent - Aged Leather Brown
+  forestGreen: '#2C4A2C',    // Dark - Deep Forest Green
+  parchment: '#F5F1E8',      // Background - Aged Parchment
   white: '#FFFFFF',
   black: '#000000',
-  gray: '#666666',
-  lightGray: '#E5E5E5',
+  warmGray: '#5A5450',       // Warm charcoal for text
+  lightTaupe: '#E8E4DD',     // Light warm neutral
 
   // Semantic colors
-  premium: '#FFD700',      // Golden for premium features
-  lock: '#999999',         // Gray for locked content
+  premium: '#8B6F47',        // Leather brown for premium features
+  lock: '#999999',           // Gray for locked content
 };
 
 export const AppTheme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    primary: BrandColors.skyBlue,
-    secondary: BrandColors.goldenYellow,
-    tertiary: BrandColors.navyBlue,
-    background: BrandColors.cream,
+    primary: BrandColors.sageGreen,
+    secondary: BrandColors.leatherBrown,
+    tertiary: BrandColors.forestGreen,
+    background: BrandColors.parchment,
     surface: BrandColors.white,
-    surfaceVariant: BrandColors.lightGray,
+    surfaceVariant: BrandColors.lightTaupe,
     onSurface: BrandColors.black,
-    onSurfaceVariant: BrandColors.gray,
-    outline: BrandColors.lightGray,
+    onSurfaceVariant: BrandColors.warmGray,
+    outline: BrandColors.lightTaupe,
   },
   roundness: 12,
 };
@@ -38,13 +39,13 @@ export const Typography = {
     fontFamily: 'System', // In production: 'Playfair Display'
     fontSize: 24,
     fontWeight: '700',
-    color: BrandColors.navyBlue,
+    color: BrandColors.forestGreen,
   },
   subheader: {
     fontFamily: 'System',
     fontSize: 18,
     fontWeight: '600',
-    color: BrandColors.navyBlue,
+    color: BrandColors.forestGreen,
   },
   body: {
     fontFamily: 'System', // In production: 'Source Sans Pro'
@@ -56,13 +57,13 @@ export const Typography = {
     fontFamily: 'System',
     fontSize: 14,
     fontWeight: '400',
-    color: BrandColors.gray,
+    color: BrandColors.warmGray,
   },
   quote: {
     fontFamily: 'System',
     fontSize: 15,
     fontWeight: '400',
     fontStyle: 'italic',
-    color: BrandColors.navyBlue,
+    color: BrandColors.forestGreen,
   },
 };

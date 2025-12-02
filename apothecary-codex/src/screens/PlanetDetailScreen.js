@@ -58,7 +58,7 @@ export default function PlanetDetailScreen({ route, navigation }) {
   if (loading) {
     return (
       <View style={styles.loadingContainer}>
-        <ActivityIndicator size="large" color={BrandColors.skyBlue} />
+        <ActivityIndicator size="large" color={BrandColors.sageGreen} />
         <Text style={styles.loadingText}>Loading {planetName} herbs...</Text>
       </View>
     );
@@ -122,13 +122,13 @@ export default function PlanetDetailScreen({ route, navigation }) {
                   <MaterialCommunityIcons
                     name="leaf"
                     size={24}
-                    color={BrandColors.skyBlue}
+                    color={BrandColors.sageGreen}
                   />
                   <Title style={styles.herbName}>{herb.herbName}</Title>
                   <MaterialCommunityIcons
                     name="chevron-right"
                     size={20}
-                    color={BrandColors.gray}
+                    color={BrandColors.warmGray}
                   />
                 </View>
                 {herb.quotes.length > 0 && (
@@ -150,18 +150,18 @@ export default function PlanetDetailScreen({ route, navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
   },
   loadingContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
   },
   loadingText: {
     ...Typography.body,
     marginTop: 16,
-    color: BrandColors.gray,
+    color: BrandColors.warmGray,
   },
   headerCard: {
     margin: 16,
@@ -192,7 +192,7 @@ const styles = StyleSheet.create({
     marginTop: 12,
     paddingTop: 12,
     borderTopWidth: 1,
-    borderTopColor: BrandColors.lightGray,
+    borderTopColor: BrandColors.lightTaupe,
   },
   sectionLabel: {
     ...Typography.body,

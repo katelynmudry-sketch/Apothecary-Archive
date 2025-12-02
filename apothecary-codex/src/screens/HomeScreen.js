@@ -68,7 +68,7 @@ export default function HomeScreen({ navigation }) {
           value={searchQuery}
           onSubmitEditing={handleSearch}
           style={styles.searchBar}
-          iconColor={BrandColors.navyBlue}
+          iconColor={BrandColors.forestGreen}
         />
 
         {/* Popular Searches */}
@@ -76,7 +76,7 @@ export default function HomeScreen({ navigation }) {
           <Card.Content>
             <Title style={styles.cardTitle}>Popular Searches</Title>
             {loading ? (
-              <ActivityIndicator size="small" color={BrandColors.skyBlue} />
+              <ActivityIndicator size="small" color={BrandColors.sageGreen} />
             ) : (
               <View style={styles.chipContainer}>
                 {popularEmotions.map((emotion, index) => (
@@ -131,7 +131,7 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
   },
   content: {
     padding: 16,
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     ...Typography.body,
-    color: BrandColors.gray,
+    color: BrandColors.warmGray,
   },
   searchBar: {
     marginBottom: 24,
@@ -180,10 +180,10 @@ const styles = StyleSheet.create({
   chip: {
     marginRight: 8,
     marginBottom: 8,
-    backgroundColor: BrandColors.cream,
-    borderColor: BrandColors.skyBlue,
+    backgroundColor: BrandColors.parchment,
+    borderColor: BrandColors.sageGreen,
   },
   chipText: {
-    color: BrandColors.navyBlue,
+    color: BrandColors.forestGreen,
   },
 });

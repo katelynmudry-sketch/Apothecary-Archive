@@ -81,7 +81,7 @@ export default function SearchResultsScreen({ route, navigation }) {
   if (loading) {
     return (
       <View style={styles.loadingContainer}>
-        <ActivityIndicator size="large" color={BrandColors.skyBlue} />
+        <ActivityIndicator size="large" color={BrandColors.sageGreen} />
         <Text style={styles.loadingText}>Searching ancient texts...</Text>
       </View>
     );
@@ -93,7 +93,7 @@ export default function SearchResultsScreen({ route, navigation }) {
         <MaterialCommunityIcons
           name="book-search"
           size={64}
-          color={BrandColors.gray}
+          color={BrandColors.warmGray}
         />
         <Title style={styles.emptyTitle}>No herbs found</Title>
         <Paragraph style={styles.emptyText}>
@@ -127,7 +127,7 @@ export default function SearchResultsScreen({ route, navigation }) {
                   <MaterialCommunityIcons
                     name="leaf"
                     size={24}
-                    color={BrandColors.skyBlue}
+                    color={BrandColors.sageGreen}
                   />
                   <Title style={styles.herbName}>{result.herbName}</Title>
                 </View>
@@ -170,24 +170,24 @@ export default function SearchResultsScreen({ route, navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
   },
   loadingContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
   },
   loadingText: {
     ...Typography.body,
     marginTop: 16,
-    color: BrandColors.gray,
+    color: BrandColors.warmGray,
   },
   emptyContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
     padding: 32,
   },
   emptyTitle: {
@@ -198,7 +198,7 @@ const styles = StyleSheet.create({
   emptyText: {
     ...Typography.body,
     textAlign: 'center',
-    color: BrandColors.gray,
+    color: BrandColors.warmGray,
     marginBottom: 8,
   },
   header: {
@@ -208,7 +208,7 @@ const styles = StyleSheet.create({
   resultCount: {
     ...Typography.subheader,
     fontSize: 16,
-    color: BrandColors.gray,
+    color: BrandColors.warmGray,
   },
   card: {
     marginHorizontal: 16,
@@ -241,12 +241,12 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   sourceChip: {
-    backgroundColor: BrandColors.cream,
-    borderColor: BrandColors.skyBlue,
+    backgroundColor: BrandColors.parchment,
+    borderColor: BrandColors.sageGreen,
   },
   sourceChipText: {
     ...Typography.caption,
-    color: BrandColors.navyBlue,
+    color: BrandColors.forestGreen,
   },
   preview: {
     ...Typography.quote,
@@ -259,7 +259,7 @@ const styles = StyleSheet.create({
   },
   viewMore: {
     ...Typography.body,
-    color: BrandColors.skyBlue,
+    color: BrandColors.sageGreen,
     fontWeight: '600',
   },
   bottomPadding: {

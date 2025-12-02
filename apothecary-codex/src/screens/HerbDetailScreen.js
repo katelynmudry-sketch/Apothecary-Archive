@@ -65,7 +65,7 @@ export default function HerbDetailScreen({ route, navigation }) {
           <MaterialCommunityIcons
             name="lock"
             size={32}
-            color={BrandColors.goldenYellow}
+            color={BrandColors.leatherBrown}
           />
           <Title style={styles.premiumTitle}>Unlock Planetary Wisdom</Title>
         </View>
@@ -103,7 +103,7 @@ export default function HerbDetailScreen({ route, navigation }) {
               <MaterialCommunityIcons
                 name="book-open-page-variant"
                 size={24}
-                color={BrandColors.navyBlue}
+                color={BrandColors.forestGreen}
               />
               <Title style={styles.sourceName}>{sourceName}</Title>
               {starRating && <Text style={styles.starRating}>{starRating}</Text>}
@@ -118,7 +118,7 @@ export default function HerbDetailScreen({ route, navigation }) {
               <MaterialCommunityIcons
                 name="format-quote-open"
                 size={20}
-                color={BrandColors.skyBlue}
+                color={BrandColors.sageGreen}
               />
               <Paragraph style={styles.quote}>
                 {record.Original_Quote}
@@ -187,7 +187,7 @@ export default function HerbDetailScreen({ route, navigation }) {
   if (loading) {
     return (
       <View style={styles.loadingContainer}>
-        <ActivityIndicator size="large" color={BrandColors.skyBlue} />
+        <ActivityIndicator size="large" color={BrandColors.sageGreen} />
         <Text style={styles.loadingText}>Loading herb details...</Text>
       </View>
     );
@@ -199,7 +199,7 @@ export default function HerbDetailScreen({ route, navigation }) {
         <MaterialCommunityIcons
           name="leaf-off"
           size={64}
-          color={BrandColors.gray}
+          color={BrandColors.warmGray}
         />
         <Title style={styles.emptyTitle}>No details found</Title>
         <Paragraph style={styles.emptyText}>
@@ -221,7 +221,7 @@ export default function HerbDetailScreen({ route, navigation }) {
             <MaterialCommunityIcons
               name="leaf"
               size={48}
-              color={BrandColors.skyBlue}
+              color={BrandColors.sageGreen}
             />
             <View style={styles.headerText}>
               <Title style={styles.herbTitle}>{herbName}</Title>
@@ -250,24 +250,24 @@ export default function HerbDetailScreen({ route, navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
   },
   loadingContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
   },
   loadingText: {
     ...Typography.body,
     marginTop: 16,
-    color: BrandColors.gray,
+    color: BrandColors.warmGray,
   },
   emptyContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
     padding: 32,
   },
   emptyTitle: {
@@ -278,7 +278,7 @@ const styles = StyleSheet.create({
   emptyText: {
     ...Typography.body,
     textAlign: 'center',
-    color: BrandColors.gray,
+    color: BrandColors.warmGray,
   },
   headerCard: {
     margin: 16,
@@ -335,7 +335,7 @@ const styles = StyleSheet.create({
   },
   quoteContainer: {
     flexDirection: 'row',
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
     padding: 12,
     borderRadius: 8,
     marginBottom: 16,
@@ -366,28 +366,28 @@ const styles = StyleSheet.create({
     marginRight: 8,
     marginBottom: 8,
     backgroundColor: BrandColors.white,
-    borderColor: BrandColors.skyBlue,
+    borderColor: BrandColors.sageGreen,
   },
   chipText: {
     ...Typography.caption,
-    color: BrandColors.navyBlue,
+    color: BrandColors.forestGreen,
   },
   planetarySection: {
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
     padding: 12,
     borderRadius: 8,
     borderLeftWidth: 4,
-    borderLeftColor: BrandColors.goldenYellow,
+    borderLeftColor: BrandColors.leatherBrown,
   },
   planetaryText: {
     ...Typography.body,
     fontWeight: '600',
     fontSize: 18,
-    color: BrandColors.navyBlue,
+    color: BrandColors.forestGreen,
   },
   divider: {
     marginVertical: 16,
-    backgroundColor: BrandColors.lightGray,
+    backgroundColor: BrandColors.lightTaupe,
   },
   card: {
     margin: 16,
@@ -396,7 +396,7 @@ const styles = StyleSheet.create({
   },
   premiumCard: {
     borderWidth: 2,
-    borderColor: BrandColors.goldenYellow,
+    borderColor: BrandColors.leatherBrown,
   },
   premiumHeader: {
     flexDirection: 'row',
@@ -406,7 +406,7 @@ const styles = StyleSheet.create({
   premiumTitle: {
     ...Typography.subheader,
     marginLeft: 12,
-    color: BrandColors.navyBlue,
+    color: BrandColors.forestGreen,
   },
   premiumText: {
     ...Typography.body,
@@ -415,10 +415,10 @@ const styles = StyleSheet.create({
   },
   premiumButton: {
     marginTop: 8,
-    backgroundColor: BrandColors.goldenYellow,
+    backgroundColor: BrandColors.leatherBrown,
   },
   premiumButtonLabel: {
-    color: BrandColors.navyBlue,
+    color: BrandColors.forestGreen,
     fontWeight: '600',
   },
   bottomPadding: {

@@ -66,7 +66,7 @@ export default function BrowseHerbsScreen({ navigation }) {
           <MaterialCommunityIcons
             name="leaf"
             size={28}
-            color={BrandColors.skyBlue}
+            color={BrandColors.sageGreen}
           />
           <View style={styles.herbInfo}>
             <Title style={styles.herbName}>{item.Common_Name}</Title>
@@ -77,7 +77,7 @@ export default function BrowseHerbsScreen({ navigation }) {
           <MaterialCommunityIcons
             name="chevron-right"
             size={24}
-            color={BrandColors.gray}
+            color={BrandColors.warmGray}
           />
         </Card.Content>
       </Card>
@@ -87,7 +87,7 @@ export default function BrowseHerbsScreen({ navigation }) {
   if (loading) {
     return (
       <View style={styles.loadingContainer}>
-        <ActivityIndicator size="large" color={BrandColors.skyBlue} />
+        <ActivityIndicator size="large" color={BrandColors.sageGreen} />
         <Text style={styles.loadingText}>Loading herbs...</Text>
       </View>
     );
@@ -101,7 +101,7 @@ export default function BrowseHerbsScreen({ navigation }) {
           onChangeText={setSearchQuery}
           value={searchQuery}
           style={styles.searchBar}
-          iconColor={BrandColors.navyBlue}
+          iconColor={BrandColors.forestGreen}
         />
         <Text style={styles.resultCount}>
           {filteredHerbs.length} {filteredHerbs.length === 1 ? 'herb' : 'herbs'}
@@ -121,23 +121,23 @@ export default function BrowseHerbsScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
   },
   loadingContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
   },
   loadingText: {
     ...Typography.body,
     marginTop: 16,
-    color: BrandColors.gray,
+    color: BrandColors.warmGray,
   },
   searchContainer: {
     padding: 16,
     paddingBottom: 8,
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
   },
   searchBar: {
     backgroundColor: BrandColors.white,

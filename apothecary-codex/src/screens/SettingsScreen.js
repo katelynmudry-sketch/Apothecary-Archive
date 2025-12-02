@@ -50,7 +50,7 @@ export default function SettingsScreen() {
               <Switch
                 value={offlineMode}
                 onValueChange={setOfflineMode}
-                color={BrandColors.skyBlue}
+                color={BrandColors.sageGreen}
               />
             )}
           />
@@ -110,7 +110,7 @@ export default function SettingsScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: BrandColors.cream,
+    backgroundColor: BrandColors.parchment,
   },
   card: {
     margin: 16,
@@ -130,11 +130,11 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   upgradeButton: {
-    backgroundColor: BrandColors.goldenYellow,
+    backgroundColor: BrandColors.leatherBrown,
     marginBottom: 12,
   },
   upgradeButtonLabel: {
-    color: BrandColors.navyBlue,
+    color: BrandColors.forestGreen,
     fontWeight: '600',
   },
   benefitsText: {
@@ -147,17 +147,17 @@ const styles = StyleSheet.create({
   },
   button: {
     marginTop: 8,
-    borderColor: BrandColors.skyBlue,
+    borderColor: BrandColors.sageGreen,
   },
   divider: {
     marginVertical: 16,
-    backgroundColor: BrandColors.lightGray,
+    backgroundColor: BrandColors.lightTaupe,
   },
   disclaimerText: {
     ...Typography.caption,
     lineHeight: 20,
     marginBottom: 8,
-    color: BrandColors.gray,
+    color: BrandColors.warmGray,
   },
   bottomPadding: {
     height: 32,
