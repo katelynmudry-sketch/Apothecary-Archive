@@ -45,7 +45,7 @@ export default function SettingsScreen() {
           <List.Item
             title="Offline Mode"
             description="Use cached data when offline"
-            left={props => <List.Icon {...props} icon="cloud-off-outline" />}
+            left={props => <List.Icon icon="cloud-off-outline" color={props.color} />}
             right={() => (
               <Switch
                 value={offlineMode}
@@ -70,20 +70,20 @@ export default function SettingsScreen() {
           <Divider style={styles.divider} />
           <List.Item
             title="Privacy Policy"
-            left={props => <List.Icon {...props} icon="shield-check" />}
-            right={props => <List.Icon {...props} icon="chevron-right" />}
+            left={props => <List.Icon icon="shield-check" color={props.color} />}
+            right={props => <List.Icon icon="chevron-right" color={props.color} />}
             onPress={() => {/* Show privacy policy */}}
           />
           <List.Item
             title="Terms of Service"
-            left={props => <List.Icon {...props} icon="file-document" />}
-            right={props => <List.Icon {...props} icon="chevron-right" />}
+            left={props => <List.Icon icon="file-document" color={props.color} />}
+            right={props => <List.Icon icon="chevron-right" color={props.color} />}
             onPress={() => {/* Show terms */}}
           />
           <List.Item
             title="Give Feedback"
-            left={props => <List.Icon {...props} icon="message-text" />}
-            right={props => <List.Icon {...props} icon="chevron-right" />}
+            left={props => <List.Icon icon="message-text" color={props.color} />}
+            right={props => <List.Icon icon="chevron-right" color={props.color} />}
             onPress={() => {/* Open feedback */}}
           />
         </Card.Content>
