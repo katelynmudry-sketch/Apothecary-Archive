@@ -138,17 +138,6 @@ function TabNavigator({ isPremium = false }) {
           ),
         }}
       />
-      {isPremium && (
-        <Tab.Screen
-          name="Planets"
-          component={PlanetsStackNavigator}
-          options={{
-            tabBarIcon: ({ color, size }) => (
-              <MaterialCommunityIcons name="star-circle" size={size} color={color} />
-            ),
-          }}
-        />
-      )}
       <Tab.Screen
         name="Favorites"
         component={FavoritesScreen}
