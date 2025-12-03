@@ -1,7 +1,7 @@
 // Airtable Configuration
 export const AIRTABLE_CONFIG = {
   apiKey: 'patJyxE1gIHMryXKd',
-  baseId: 'Btx8e0n5L',
+  baseId: 'appwddBtx8e0n5Ijm',
   tables: {
     sources: 'Sources',
     herbs: 'Herbs',
